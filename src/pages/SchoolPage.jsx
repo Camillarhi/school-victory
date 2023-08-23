@@ -1,10 +1,10 @@
-import React from 'react'
-import NavBar from '../components/NavBar/NavBar'
+import React from "react";
+import NavBar from "../components/NavBar/NavBar";
 
 export default function SchoolPage() {
   return (
-    <>
-    <NavBar/>
-    </>
-  )
+    <div className="font-sans">
+      <NavBar />
+    </div>
+  );
 }
