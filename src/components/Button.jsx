@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowLeft } from "../assets/svgs";
+import { ArrowRight } from "../assets/svgs";
 
 export default function Button({
   text = "",
@@ -23,7 +23,7 @@ export default function Button({
       className={`${className} ${buttonSizeClass()}  rounded-[.3125rem] flex justify-center items-center gap-[.9375rem] leading-[1.375rem] font-bold tracking-[.0125rem] text-[.875rem] cursor-pointer`}
     >
       {text}
-      {icon && <img src={ArrowLeft} alt="arrowleft" />}
+      {icon && <img src={ArrowRight} alt="arrowRight" />}
     </button>
   );
 }
