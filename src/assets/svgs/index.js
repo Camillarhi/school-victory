@@ -5,5 +5,6 @@ export { default as Download } from "./download.svg";
 export { default as Eye } from "./eye.svg";
 export { default as GreaterThan } from "./greaterThan.svg";
 export { default as Like } from "./like.svg";
+export { default as WhiteCheck } from "./white-check.svg";
 export { default as Star } from "./star.svg";
-
+export { default as WhiteLike } from "./white-like.svg";

@@ -11,14 +11,14 @@ export default function CourseCard({
   return (
     <div
       className={` w-[14.875rem] h-[18rem] ${
-        active ? "bg-[#96BB7C]" : "bg-white"
+        active ? "bg-primary" : "bg-white"
       } px-10 py-[2.1875rem] grid gap-y-5 shadow-lg cursor-pointer`}
       onClick={onClick}
     >
       {image}
       <p
         className={`${
-          active ? "text-white" : "text-[#252B42]"
+          active ? "text-white" : "text-text-color"
         } font-bold leading-6 tracking-[.0063rem]`}
       >
         {course}
@@ -28,7 +28,7 @@ export default function CourseCard({
       />
       <p
         className={`text-[.875rem] ${
-          active ? "text-white" : "text-[#737373]"
+          active ? "text-white" : "text-second-text-color"
         } tracking-[.0125rem] leading-5`}
       >
         {description}{" "}
