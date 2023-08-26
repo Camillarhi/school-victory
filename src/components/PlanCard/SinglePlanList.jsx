@@ -1,7 +1,7 @@
 import React from "react";
 import { RoundGreenCheck, RoundGreyCheck } from "../../assets/svgs";
 
-export default function SinglePlanList({ isAvailable, text }) {
+export default function SinglePlanList({ isAvailable, text, className }) {
   return (
     <div className=" flex gap-x-[.625rem] items-center">
       <div className="w-fit">
@@ -12,7 +12,9 @@ export default function SinglePlanList({ isAvailable, text }) {
         />{" "}
       </div>
 
-      <p className=" text-sm font-bold leading-6 tracking-[.0125rem] w-full">
+      <p
+        className={` text-sm font-bold leading-6 tracking-[.0125rem] w-full ${className}`}
+      >
         {text}
       </p>
     </div>

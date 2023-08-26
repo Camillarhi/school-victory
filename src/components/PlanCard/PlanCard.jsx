@@ -3,12 +3,13 @@ import Button from "../Button";
 import CircledLike from "../CircledLike/CircledLike";
 import SinglePlanList from "./SinglePlanList";
 
-export default function PlanCard({ active }) {
+export default function PlanCard({ active = false, id, onClick }) {
   return (
     <div
+      onClick={onClick}
       className={` ${
         active ? "bg-[#2D4059]" : "bg-white"
-      } h-[55.5rem] w-[20.1875rem] px-10 py-[3.125rem] flex flex-col justify-center items-center gap-y-[2.1875rem] shadow-lg`}
+      } h-[55.5rem] transform hover:scale-105 w-[20.1875rem] px-10 py-[3.125rem] flex flex-col justify-center items-center gap-y-[2.1875rem] shadow-lg cursor-pointer`}
     >
       <CircledLike />
       <p
@@ -49,13 +50,30 @@ export default function PlanCard({ active }) {
       </div>
 
       <div className=" w-[15.1875rem] h-[14.75rem] max-h-[14.75rem] flex flex-col gap-y-[.9375rem]">
-        <SinglePlanList isAvailable={true} text={"Unlimited product updates"} />
-        <SinglePlanList isAvailable={true} text={"Unlimited product updates"} />
-        <SinglePlanList isAvailable={true} text={"Unlimited product updates"} />
-        <SinglePlanList isAvailable={false} text={"1GB Cloud storage"} />
+        <SinglePlanList
+          isAvailable={true}
+          text={"Unlimited product updates"}
+          className={active ? "text-white" : " text-text-color"}
+        />
+        <SinglePlanList
+          isAvailable={true}
+          text={"Unlimited product updates"}
+          className={active ? "text-white" : " text-text-color"}
+        />
+        <SinglePlanList
+          isAvailable={true}
+          text={"Unlimited product updates"}
+          className={active ? "text-white" : " text-text-color"}
+        />
+        <SinglePlanList
+          isAvailable={false}
+          text={"1GB Cloud storage"}
+          className={active ? "text-white" : " text-text-color"}
+        />
         <SinglePlanList
           isAvailable={false}
           text={"Email and community support"}
+          className={active ? "text-white" : " text-text-color"}
         />
       </div>
     </div>

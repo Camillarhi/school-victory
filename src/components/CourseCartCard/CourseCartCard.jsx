@@ -24,7 +24,7 @@ export default function CourseCartCard({
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
         }}
-        className=" h-[18.75rem] bg-primary flex flex-col justify-between"
+        className=" h-[18.75rem] bg-primary flex flex-col justify-between cursor-pointer"
       >
         <div className="ml-[1.25rem] mt-[1.25rem]">
           <Button size="small" className=" bg-red-600 text-white" text="Sale" />
