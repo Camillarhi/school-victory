@@ -15,7 +15,7 @@ export default function CourseCard({
       } px-10 py-[2.1875rem] grid gap-y-5 shadow-lg cursor-pointer`}
       onClick={onClick}
     >
-      {image}
+      <img src={image} alt="course" />
       <p
         className={`${
           active ? "text-white" : "text-text-color"
