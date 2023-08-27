@@ -19,36 +19,36 @@ export default function Product() {
           </p>
         </div>
         <div>
-          <CourseCardList
-            props={[
-              {
-                id: 1,
-                course: "Training Courses",
-                description: "The gradual accumulation of information about ",
-                image: Computer,
-              },
-              {
-                id: 2,
-                course: "Training Courses",
-                description: "The gradual accumulation of information about ",
-                image: Telescope,
-              },
-              {
-                id: 3,
-                course: "Training Courses",
-                description: "The gradual accumulation of information about ",
-                image: Beaker,
-              },
-              {
-                id: 4,
-                course: "Training Courses",
-                description: "The gradual accumulation of information about ",
-                image: Owl,
-              },
-            ]}
-          />
+          <CourseCardList props={courseCardContents} />
         </div>
       </div>
     </div>
   );
 }
+
+const courseCardContents = [
+  {
+    id: 1,
+    course: "Training Courses",
+    description: "The gradual accumulation of information about ",
+    image: Computer,
+  },
+  {
+    id: 2,
+    course: "Training Courses",
+    description: "The gradual accumulation of information about ",
+    image: Telescope,
+  },
+  {
+    id: 3,
+    course: "Training Courses",
+    description: "The gradual accumulation of information about ",
+    image: Beaker,
+  },
+  {
+    id: 4,
+    course: "Training Courses",
+    description: "The gradual accumulation of information about ",
+    image: Owl,
+  },
+];

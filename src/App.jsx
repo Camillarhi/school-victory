@@ -1,8 +1,16 @@
-import 'typeface-montserrat';
-import SchoolPage from './pages/Index'
+import "typeface-montserrat";
+import NavBar from "./Layouts/NavBar/NavBar";
+import Home from "./pages/Home/Home";
+import Product from "./pages/Product/Product";
 
 function App() {
-  return <SchoolPage />;
+  return (
+    <div className="font-sans">
+      <NavBar />
+      <Home />
+      <Product />
+    </div>
+  );
 }
 
 export default App;
