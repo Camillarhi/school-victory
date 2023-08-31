@@ -13,7 +13,7 @@ import Button from "../../components/Button";
 export default function Home() {
   return (
     <div className=" flex gap-x-[2.3125rem] mt-[6.25rem]" id="home">
-      <div className=" w-1/2 h-[682px] flex justify-center items-center">
+      <div className=" w-1/2 h-[42.625rem] flex justify-center items-center">
         <div className=" flex flex-col gap-y-[1.875rem] bg-white">
           <p className=" text-primary font-bold tracking-[.0063rem]">Online</p>
           <h3 className=" text-text-color text-[3.625rem] leading-[5rem] font-bold w-[33.875rem]">
@@ -37,7 +37,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className=" w-1/2 h-[682px] flex justify-center items-center relative mr-[2.25rem]">
+      <div className=" w-1/2 h-[42.625rem] flex justify-center items-center relative mr-[2.25rem]">
         <div className="w-[80%] h-[80%] bg-[#AAEAD0] rounded-full absolute"></div>
         <img src={Boy} alt="boy" className=" absolute left-1" />
         <img

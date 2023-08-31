@@ -10,7 +10,7 @@ export default function NavBar() {
       <div className=" flex justify-between gap-x-[15rem]">
         <div className=" flex gap-x-[1.3125rem] items-center">
           <a
-            href="#home"
+            href="/"
             className=" text-second-text-color text-sm font-bold tracking-[.0125rem] leading-6"
           >
             Home
@@ -22,7 +22,7 @@ export default function NavBar() {
             Product
           </a>
           <a
-            href="pricing"
+            href="#pricing"
             className=" text-second-text-color text-sm font-bold tracking-[.0125rem] leading-6"
           >
             Pricing
