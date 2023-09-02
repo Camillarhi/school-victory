@@ -24,6 +24,7 @@ export { default as Score } from "./score.svg";
 export { default as Squigly } from "./squigly.svg";
 export { default as Star } from "./star.svg";
 export { default as Telescope } from "./telescope.svg";
+export { default as Play } from "./play.svg";
 export { default as Video } from "./video.svg";
 export { default as WhiteLike } from "./white-like.svg";
 

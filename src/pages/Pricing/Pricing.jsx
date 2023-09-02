@@ -1,17 +1,23 @@
 import React from "react";
-import { Video } from "../../assets/svgs";
 import Container from "../../components/Container/Container";
+import Course from "./Course/Course";
+import Package from "./Package/Package";
+import PracticeAdvice from "./PracticeAdvice/PracticeAdvice";
 
 export default function Pricing() {
   return (
     <Container id={"pricing"}>
-      <div className=" w-[65.625rem] h-[42.6875rem] py-[10rem] flex justify-between gap-x-[1.875rem] items-center">
-        <div className=" w-1/2 h-[246px] bg-black"></div>
-        <div className=" w-1/2 relative">
-          <img src={Video} alt="video" className=" rounded-lg" />
-          <div className=" w-[92.6px] h-[92.6px] bg-[#96BB7C] absolute"></div>
-        </div>
-      </div>
+      {/* Package starts here */}
+      <Package />
+      {/* Package ends here */}
+
+      {/* Course starts here */}
+      <Course />
+      {/* Course ends here  */}
+
+      {/* Practice advice starts */}
+      <PracticeAdvice />
+      {/* Practice advice ends */}
     </Container>
   );
 }

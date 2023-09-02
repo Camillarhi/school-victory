@@ -3,11 +3,11 @@ import {
   Cart,
   Download,
   Eye,
-  GreaterThan,
   Like,
-  Star,
+  Star
 } from "../../assets/svgs";
 import Button from "../Button";
+import LearnMore from "../LearnMore/LearnMore";
 
 export default function CourseCartCard({
   image,
@@ -59,15 +59,10 @@ export default function CourseCartCard({
           </p>
         </div>
         <div className="flex gap-x-[.625rem] font-bold leading-6 tracking-[.0063rem]">
-          <p className=" text-muted">$16.48</p>
+          <p className=" text-muted-color">$16.48</p>
           <p className=" text-secondary-color-1">$6.48</p>
         </div>
-        <div>
-          <button className=" border-primary border py-[.625rem] px-5 rounded-[2.3125rem] flex justify-center items-center gap-x-[.625rem] font-bold text-primary leading-6 text-sm tracking-[0..125rem]">
-            Learn More
-            <img src={GreaterThan} alt="greater-than" />
-          </button>
-        </div>
+        <LearnMore border />
       </div>
     </div>
   );
