@@ -5,7 +5,8 @@ import FooterLink from "../../components/FooterLink/FooterLink";
 
 export default function Footer() {
   return (
-    <Container id={"footer"}>
+    <>
+     <Container id={"footer"}>
       <div className=" h-[16.875rem] w-[65.625rem] py-[3.125rem] flex gap-x-[1.875rem]">
         <FooterLink
           title={"Company Info"}
@@ -56,5 +57,11 @@ export default function Footer() {
         />
       </div>
     </Container>
+
+    <Container id={'copyright'} className={'bg-[#FAFAFA]'}>
+
+    </Container>
+    </>
+   
   );
 }
