@@ -26,5 +26,5 @@ export { default as Star } from "./star.svg";
 export { default as Telescope } from "./telescope.svg";
 export { default as Play } from "./play.svg";
 export { default as Video } from "./video.svg";
+export { default as MaleProfile } from "./male-profile.svg";
 export { default as WhiteLike } from "./white-like.svg";
-

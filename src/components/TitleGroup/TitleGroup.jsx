@@ -6,9 +6,14 @@ export default function TitleGroup({
   titleText,
   className,
   description,
+  itemsCentered,
 }) {
   return (
-    <div className="flex flex-col gap-y-[.625rem] tracking-[.0125rem]">
+    <div
+      className={` ${
+        itemsCentered && "items-center"
+      } flex flex-col gap-y-[.625rem] tracking-[.0125rem]`}
+    >
       <p className=" text-primary font-bold text-sm leading-6">
         {categoryText}
       </p>

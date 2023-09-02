@@ -3,6 +3,7 @@ import Container from "../../components/Container/Container";
 import Course from "./Course/Course";
 import Package from "./Package/Package";
 import PracticeAdvice from "./PracticeAdvice/PracticeAdvice";
+import Testimonial from "./Testimonial/Testimonial";
 
 export default function Pricing() {
   return (
@@ -18,6 +19,10 @@ export default function Pricing() {
       {/* Practice advice starts */}
       <PracticeAdvice />
       {/* Practice advice ends */}
+
+      {/* Testimonials starts here */}
+<Testimonial/>
+      {/* Testimonials ends here */}
     </Container>
   );
 }
