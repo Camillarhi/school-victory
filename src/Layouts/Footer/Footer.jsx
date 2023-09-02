@@ -1,7 +1,7 @@
 import React from "react";
+import { Location, Mail, Phone } from "../../assets/svgs";
 import Container from "../../components/Container/Container";
 import FooterLink from "../../components/FooterLink/FooterLink";
-import { Location, Mail, Phone } from "../../assets/svgs";
 
 export default function Footer() {
   return (
