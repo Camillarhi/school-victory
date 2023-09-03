@@ -21,7 +21,7 @@ export default function Pricing() {
       {/* Practice advice ends */}
 
       {/* Testimonials starts here */}
-<Testimonial/>
+      <Testimonial />
       {/* Testimonials ends here */}
     </Container>
   );

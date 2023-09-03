@@ -1,5 +1,12 @@
 import React from "react";
-import { Location, Mail, Phone } from "../../assets/svgs";
+import {
+  Facebook,
+  Instagram,
+  Location,
+  Mail,
+  Phone,
+  Twitter,
+} from "../../assets/svgs";
 import Container from "../../components/Container/Container";
 import FooterLink from "../../components/FooterLink/FooterLink";
 
@@ -63,7 +70,11 @@ export default function Footer() {
           <p className=" text-sm text-second-text-color font-bold leading-6 tracking-[.0125rem]">
             Made With Love By Figmaland All Right Reserved{" "}
           </p>
-          <div></div>
+          <div className=" flex gap-x-5">
+            <img src={Facebook} alt="facebook" />
+            <img src={Instagram} alt="Instagram" />
+            <img src={Twitter} alt="Twitter" />
+          </div>
         </div>
       </Container>
     </>
