@@ -66,7 +66,7 @@ export default function Footer() {
       </Container>
 
       <Container id={"copyright"} className={"bg-[#FAFAFA]"}>
-        <div className="md:h-[4.625rem] md:w-[65.625rem] flex justify-between items-center flex-col md:flex-row">
+        <div className="md:h-[4.625rem] md:w-[65.625rem] flex justify-between items-center flex-col md:flex-row mb-2 md:mb-0">
           <p className=" text-sm text-second-text-color font-bold leading-6 tracking-[.0125rem]">
             Made With Love By Figmaland All Right Reserved{" "}
           </p>
