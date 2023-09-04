@@ -1,8 +1,21 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Button from "../../components/Button";
 
 export default function NavBar() {
   const [toggle, setToggle] = useState(false);
+  const elementRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (elementRef.current && !elementRef.current.contains(event.target)) {
+        setToggle(() => false);
+      }
+    };
+    document.addEventListener("click", handleClickOutside, true);
+    return () => {
+      document.removeEventListener("click", handleClickOutside, true);
+    };
+  }, [setToggle]);
 
   return (
     <nav className=" max-w-screen-xl md:mx-[3.6875rem] px-2 md:px-0 h-[5.6875rem] flex md:gap-x-[3.25rem] justify-between flex-wrap items-center pt-[1.1875rem] pb-5 fixed bg-white z-[9999] w-full top-0">
@@ -35,6 +48,7 @@ export default function NavBar() {
       </button>
 
       <div
+      ref={elementRef}
         className={`md:flex p-4 mt-2 md:p-0 flex-col md:flex-row md:mt-0 justify-between gap-x-[15rem] w-full md:w-fit bg-white ${
           !toggle && "hidden"
         }`}
