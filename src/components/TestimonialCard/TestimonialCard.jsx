@@ -6,7 +6,7 @@ export default function TestimonialCard({ image, name, role }) {
     <div className=" md:w-[31.75rem] w-full h-[23.6259rem] flex flex-col justify-center items-center px-[1.5625rem] pt-[1.5625rem]">
       <img className=" rounded-full" src={image} alt="female-profile" />
       <div className=" px-[1.875rem] py-[1.875rem] flex flex-col items-center justify-center">
-        <p className=" text-center text-sm tracking-[.0125rem] text-second-text-color w-[20rem]">
+        <p className=" text-center text-sm tracking-[.0125rem] text-second-text-color md:w-[20rem]">
           Slate helps you see how many more days you need to work to reach your
           financial goal for the month and year.
         </p>
