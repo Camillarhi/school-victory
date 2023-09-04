@@ -12,9 +12,9 @@ function App() {
       <NavBar />
       <Home />
       <Product />
-      <Pricing />
+      {/* <Pricing />
       <Contact />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }

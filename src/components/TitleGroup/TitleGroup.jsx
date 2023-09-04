@@ -19,7 +19,7 @@ export default function TitleGroup({
       </p>
       <Title text={titleText} className={className} />
 
-      <p className=" text-second-text-color text-sm w-[29.3125rem]">
+      <p className=" text-second-text-color text-sm md:w-[29.3125rem]">
         {description[0]}
         <br />
         <p>{description[1]}</p>

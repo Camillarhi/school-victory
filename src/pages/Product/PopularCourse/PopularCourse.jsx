@@ -5,7 +5,7 @@ import TitleGroup from "../../../components/TitleGroup/TitleGroup";
 
 export default function PopularCourse() {
   return (
-    <div className=" mb-6 w-[65.625rem] h-[47.375rem] py-[7rem] flex flex-col gap-y-[7rem]">
+    <div className=" mb-6 md:w-[65.625rem] h-[47.375rem] py-[7rem] flex flex-col gap-y-[7rem]">
       <TitleGroup
         categoryText={"Practice Advice"}
         titleText={"Our Popular Courses"}
