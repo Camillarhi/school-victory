@@ -14,7 +14,7 @@ export default function Footer() {
   return (
     <>
       <Container id={"footer"}>
-        <div className=" h-[16.875rem] w-[65.625rem] py-[3.125rem] flex gap-x-[1.875rem]">
+        <div className=" md:h-[16.875rem] h-fit md:w-[65.625rem] py-[3.125rem] flex gap-[1.875rem] flex-col md:flex-row">
           <FooterLink
             title={"Company Info"}
             contents={[
@@ -66,7 +66,7 @@ export default function Footer() {
       </Container>
 
       <Container id={"copyright"} className={"bg-[#FAFAFA]"}>
-        <div className="h-[4.625rem] w-[65.625rem] flex justify-between items-center">
+        <div className="md:h-[4.625rem] md:w-[65.625rem] flex justify-between items-center flex-col md:flex-row">
           <p className=" text-sm text-second-text-color font-bold leading-6 tracking-[.0125rem]">
             Made With Love By Figmaland All Right Reserved{" "}
           </p>
