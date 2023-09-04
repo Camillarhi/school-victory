@@ -4,7 +4,7 @@ import TitleGroup from "../../../components/TitleGroup/TitleGroup";
 
 export default function PracticeAdvice() {
   return (
-    <div className=" h-[88.5625rem] w-[65.625rem] pt-[10rem] flex flex-col gap-y-[5rem] mb-[9.4375rem]">
+    <div className=" md:h-[88.5625rem] md:w-[65.625rem] h-fit md:pt-[10rem] pt-9 flex flex-col gap-y-[5rem] mb-[9.4375rem]">
       <TitleGroup
         titleText={"Our Experts Teacher"}
         description={[

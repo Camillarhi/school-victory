@@ -5,7 +5,7 @@ import TitleGroup from "../../../components/TitleGroup/TitleGroup";
 
 export default function Testimonial() {
   return (
-    <div className=" w-[65.625rem] h-[58.0009rem] flex flex-col gap-y-[6rem]">
+    <div className=" md:w-[65.625rem] md:h-[58.0009rem] h-full flex flex-col gap-y-[6rem]">
       <TitleGroup
         titleText={"Video in Live Action"}
         categoryText={"Testimonials"}
@@ -14,7 +14,7 @@ export default function Testimonial() {
           "the two major realms of Classical physics: Newtonian mechanics ",
         ]}
       />
-      <div className=" flex gap-x-[1.875rem]">
+      <div className=" flex gap-[1.875rem] flex-col md:flex-row">
         <TestimonialCard
           image={FemaleProfile}
           name={"Regina Miles"}
