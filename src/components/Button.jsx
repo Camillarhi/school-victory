@@ -13,7 +13,7 @@ export default function Button({
     } else if (size === "small") {
       return " md:px-[.625rem] px-[.3125rem]";
     } else {
-      return "md:px-[2.5rem] md:py-[.9375rem] px-[2.1875rem] py-[.625rem]";
+      return "md:px-[2.5rem] md:py-[.9375rem] px-[1.875rem] py-[.625rem]";
     }
   };
 
