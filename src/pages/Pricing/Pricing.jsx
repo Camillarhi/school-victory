@@ -17,11 +17,11 @@ export default function Pricing() {
       {/* Course ends here  */}
 
       {/* Practice advice starts */}
-      <PracticeAdvice />
+      {/* <PracticeAdvice /> */}
       {/* Practice advice ends */}
 
       {/* Testimonials starts here */}
-      <Testimonial />
+      {/* <Testimonial /> */}
       {/* Testimonials ends here */}
     </Container>
   );
