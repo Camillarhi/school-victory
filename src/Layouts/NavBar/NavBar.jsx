@@ -41,24 +41,28 @@ export default function NavBar() {
       >
         <div className=" flex flex-col md:flex-row gap-x-[1.3125rem] md:items-center">
           <a
+            onClick={() => setToggle(() => false)}
             href="/"
             className=" text-second-text-color md:text-sm font-bold tracking-[.0125rem] leading-6 py-2 pl-3 pr-4 hover:bg-primary rounded md:p-0 md:hover:bg-transparent"
           >
             Home
           </a>
           <a
+            onClick={() => setToggle(() => false)}
             href="#product"
             className=" text-second-text-color md:text-sm font-bold tracking-[.0125rem] leading-6 py-2 pl-3 pr-4 hover:bg-primary rounded md:p-0 md:hover:bg-transparent"
           >
             Product
           </a>
           <a
+            onClick={() => setToggle(() => false)}
             href="#pricing"
             className=" text-second-text-color md:text-sm font-bold tracking-[.0125rem] leading-6 py-2 pl-3 pr-4 hover:bg-primary rounded md:p-0 md:hover:bg-transparent"
           >
             Pricing
           </a>
           <a
+            onClick={() => setToggle(() => false)}
             href="#contact"
             className=" text-second-text-color md:text-sm font-bold tracking-[.0125rem] leading-6 py-2 pl-3 pr-4 hover:bg-primary rounded md:p-0 md:hover:bg-transparent"
           >
@@ -66,7 +70,10 @@ export default function NavBar() {
           </a>
         </div>
         <div className=" flex flex-col md:flex-row gap-x-[2.8125rem] justify-center md:items-center">
-          <p className=" text-primary md:text-sm font-bold tracking-[.0125rem] leading-[1.375rem] py-2 pl-3 pr-4 mb-1 md:mb-0 cursor-pointer hover:bg-text-color rounded md:p-0 md:hover:bg-transparent">
+          <p
+            onClick={() => setToggle(() => false)}
+            className=" text-primary md:text-sm font-bold tracking-[.0125rem] leading-[1.375rem] py-2 pl-3 pr-4 mb-1 md:mb-0 cursor-pointer hover:bg-text-color rounded md:p-0 md:hover:bg-transparent"
+          >
             Login
           </p>
           <Button
