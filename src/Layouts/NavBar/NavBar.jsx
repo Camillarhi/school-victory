@@ -36,7 +36,7 @@ export default function NavBar() {
 
       <div
         className={`md:flex p-4 mt-2 md:p-0 flex-col md:flex-row md:mt-0 justify-between gap-x-[15rem] w-full md:w-fit bg-white ${
-          toggle && "hidden"
+          !toggle && "hidden"
         }`}
       >
         <div className=" flex flex-col md:flex-row gap-x-[1.3125rem] md:items-center">
