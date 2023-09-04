@@ -1,5 +1,4 @@
 import "typeface-montserrat";
-import Footer from "./Layouts/Footer/Footer";
 import NavBar from "./Layouts/NavBar/NavBar";
 import Contact from "./pages/Contact/Contact";
 import Home from "./pages/Home/Home";
@@ -13,8 +12,8 @@ function App() {
       <Home />
       <Product />
       <Pricing />
-      {/* <Contact />
-      <Footer /> */}
+      <Contact />
+      {/* <Footer />   */}
     </div>
   );
 }
