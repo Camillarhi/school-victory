@@ -9,11 +9,11 @@ export default function Button({
 }) {
   const buttonSizeClass = () => {
     if (size === "medium") {
-      return "px-[1.5625rem] py-[.9375rem]";
+      return "md:px-[1.5625rem] md:py-[.9375rem] px-[1.25rem] py-[.625rem]";
     } else if (size === "small") {
-      return " px-[.625rem]";
+      return " md:px-[.625rem] px-[.3125rem]";
     } else {
-      return "px-[2.5rem] py-[.9375rem]";
+      return "md:px-[2.5rem] md:py-[.9375rem] px-[2.1875rem] py-[.625rem]";
     }
   };
 
