@@ -17,6 +17,18 @@ export default function NavBar() {
     };
   }, [setToggle]);
 
+  useEffect(() => {
+    const btn = document.getElementById("test-notifi");
+    console.log({ btn });
+    btn.addEventListener("click", () => {
+      Notification.requestPermission().then(async function (permission) {
+        if (permission === "granted") {
+          alert("notification granted");
+        }
+      });
+    });
+  }, []);
+
   return (
     <nav className=" max-w-screen-xl md:mx-[3.6875rem] px-2 md:px-0 h-[5.6875rem] flex md:gap-x-[3.25rem] justify-between flex-wrap items-center pt-[1.1875rem] pb-5 fixed bg-white z-[9999] w-full top-0">
       <h3 className=" text-text-color md:text-2xl text-xl font-bold tracking-[.0063rem] md:w-[11.6875rem] md:ml-[8.25rem]">
@@ -48,7 +60,7 @@ export default function NavBar() {
       </button>
 
       <div
-      ref={elementRef}
+        ref={elementRef}
         className={`md:flex p-4 mt-2 md:p-0 flex-col md:flex-row md:mt-0 justify-between gap-x-[15rem] w-full md:w-fit bg-white ${
           !toggle && "hidden"
         }`}
@@ -93,6 +105,13 @@ export default function NavBar() {
           <Button
             text="JOIN US"
             icon
+            size="medium"
+            className="text-white bg-primary"
+          />
+          <Button
+            text="test-notifi"
+            icon
+            id='test-notifi'
             size="medium"
             className="text-white bg-primary"
           />

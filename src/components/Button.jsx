@@ -6,6 +6,7 @@ export default function Button({
   className = "",
   size = "small",
   icon = false,
+  id = "",
 }) {
   const buttonSizeClass = () => {
     if (size === "medium") {
@@ -19,6 +20,7 @@ export default function Button({
 
   return (
     <button
+      id={id}
       type="button"
       className={`${className} ${buttonSizeClass()}  rounded-[.3125rem] flex justify-center items-center gap-[.9375rem] leading-[1.375rem] font-bold tracking-[.0125rem] text-[.875rem] cursor-pointer`}
     >
