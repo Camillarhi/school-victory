@@ -5,17 +5,8 @@ import Contact from "./pages/Contact/Contact";
 import Home from "./pages/Home/Home";
 import Pricing from "./pages/Pricing/Pricing";
 import Product from "./pages/Product/Product";
-import { useEffect } from "react";
 
 function App() {
-  useEffect(()=>{
-    Notification.requestPermission()
-    .then(async function (permission) {
-      if (permission === "granted") {
-      alert('notification granted')
-      }
-    });
-  },[])
   return (
     <div className="font-sans">
       <NavBar />
