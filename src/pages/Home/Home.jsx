@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   Bag,
   Bar,
@@ -11,6 +11,36 @@ import {
 import Button from "../../components/Button";
 
 export default function Home() {
+  useEffect(() => {
+    async function run() {
+      // A service worker must be registered in order to send notifications on iOS
+      const registration = await navigator.serviceWorker.register(
+        "serviceworker.js",
+        {
+          scope: "./",
+        }
+      );
+
+      const button = document.getElementById("subscribe");
+      button.addEventListener("click", async () => {
+        // Triggers popup to request access to send notifications
+        const result = await window.Notification.requestPermission();
+
+        // If the user rejects the permission result will be "denied"
+        if (result === "granted") {
+          // You must use the service worker notification to show the notification
+          // Using new Notification("Hello World", { body: "My first notification on iOS"}) does not work on iOS
+          // despite working on other platforms
+          await registration.showNotification("Hello World", {
+            body: "My first notification on iOS",
+          });
+        }
+      });
+    }
+
+    run();
+  }, []);
+
   return (
     <div className=" flex gap-x-[2.3125rem] mt-[6.25rem]" id="home">
       <div className=" w-1/2 h-[682px] flex justify-center items-center">
@@ -19,6 +49,13 @@ export default function Home() {
           <h3 className=" text-text-color text-[3.625rem] leading-[5rem] font-bold w-[33.875rem]">
             HIGH QUALITY COURSES{" "}
           </h3>
+          <button
+            id="subscribe"
+            className=" bg-black text-white w-40 h-10"
+            type="button"
+          >
+            Subscribe
+          </button>
           <p className=" w-[28.625rem] text-xl leading-[1.875rem] tracking-[.0125rem] text-second-text-color">
             Every day brings with it a fresh set of learning possibilities.
           </p>
