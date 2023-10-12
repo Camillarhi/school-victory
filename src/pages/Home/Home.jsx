@@ -13,13 +13,13 @@ import Button from "../../components/Button";
 export default function Home() {
   useEffect(() => {
     async function run() {
-      // A service worker must be registered in order to send notifications on iOS
-      const registration = await navigator.serviceWorker.register(
-        "serviceworker.js",
-        {
-          scope: "./",
-        }
-      );
+      // // A service worker must be registered in order to send notifications on iOS
+      // const registration = await navigator.serviceWorker.register(
+      //   "serviceworker.js",
+      //   {
+      //     scope: "./",
+      //   }
+      // );
 
       const button = document.getElementById("subscribe");
       button.addEventListener("click", async () => {
@@ -31,9 +31,9 @@ export default function Home() {
           // You must use the service worker notification to show the notification
           // Using new Notification("Hello World", { body: "My first notification on iOS"}) does not work on iOS
           // despite working on other platforms
-          await registration.showNotification("Hello World", {
-            body: "My first notification on iOS",
-          });
+          // await registration.showNotification("Hello World", {
+          //   body: "My first notification on iOS",
+          // });
         }
       });
     }
