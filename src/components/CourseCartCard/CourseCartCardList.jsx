@@ -3,7 +3,7 @@ import CourseCartCard from "./CourseCartCard";
 
 export default function CourseCartCardList({ props }) {
   return (
-    <div className=" md:flex-row flex gap-[1.875rem] flex-col ">
+    <div className=" flex flex-row gap-[1.875rem] flex-wrap ">
       {props &&
         props?.length > 0 &&
         props?.map((a) => {

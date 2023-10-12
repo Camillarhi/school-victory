@@ -9,7 +9,7 @@ export default function PlanCardList({ props }) {
   };
 
   return (
-    <div className=" md:flex-row flex gap-[1.875rem] flex-col ">
+    <div className=" md:flex-row flex gap-[1.875rem] flex-col items-center ">
       {props &&
         props?.length > 0 &&
         props?.map((a) => {

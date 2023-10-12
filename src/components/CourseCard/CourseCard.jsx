@@ -10,12 +10,12 @@ export default function CourseCard({
 }) {
   return (
     <div
-      className={` w-[14.875rem] h-[18rem] ${
+      className={` md:w-[14.875rem] w-[45%] h-[18rem] ${
         active ? "bg-primary" : "bg-white"
-      } px-10 py-[2.1875rem] grid gap-y-5 shadow-lg cursor-pointer`}
+      } px-10 py-[2.1875rem] grid md:gap-y-5 gap-y-1 shadow-lg cursor-pointer`}
       onClick={onClick}
     >
-      <img src={image} alt="course" />
+      <img src={image} alt="course" className=" md:w-[4.5rem] md:h-[4.5rem] w-[3.125rem] h-[3.125rem]"/>
       <p
         className={`${
           active ? "text-white" : "text-text-color"
